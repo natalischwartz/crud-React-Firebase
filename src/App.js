@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import { Show } from './components/Show';
-//create
+import { Create } from "./components/Create";
 //edit
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Show/>} />
-          <Route path="/create" element="Create" />
-          <Route path="/edit/:id" element="Edit" />
+          <Route path="/create" element={<Create/>} />
+          <Route path="/edit/:id" element="componente Edit" />
 
 
         </Routes>
