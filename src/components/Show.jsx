@@ -77,8 +77,8 @@ export const Show = () =>{
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <div className="d-grid gap-2">
-                        <Link to="/create" className="btn btn-primary mt-2 mb-2">CREAR</Link>
+                    <div>
+                        <Link to="/create" className="btn btn-secondary mt-2 mb-2">CREAR</Link>
                     </div>
                     <table className="table table-dark table-hover" >
                         <thead>
@@ -95,8 +95,8 @@ export const Show = () =>{
                                     <td>{product.authors}</td>
                                     <td>{product.description}</td>
                                     <td>{product.stock}</td>
-                                    <td>
-                                        <Link to={`/edit/${product.id}`} className="btn btn-light">
+                                    <td className="d-flex align-items-center justify-content-center lh-base gap-1">
+                                        <Link to={`/edit/${product.id}`} className="btn btn-light ">
                                             <i className="fa-solid fa-pencil"></i>
                                         </Link>
                                         <button onClick={()=>{confirmDelete(product.id)}} className="btn btn-danger"><i className="fa-solid fa-trash"></i></button>
