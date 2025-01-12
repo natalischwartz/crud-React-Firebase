@@ -95,7 +95,7 @@ export const Show = () =>{
                                     <td>{product.authors}</td>
                                     <td>{product.description}</td>
                                     <td>{product.stock}</td>
-                                    <td className="d-flex align-items-center justify-content-center lh-base gap-1">
+                                    <td className="d-flex align-items-center justify-content-center gap-1"  style={{ height: '100px' }}>
                                         <Link to={`/edit/${product.id}`} className="btn btn-light ">
                                             <i className="fa-solid fa-pencil"></i>
                                         </Link>
